@@ -24,7 +24,6 @@ def parse(command_line: str) -> list[str]:
 
 
 if __name__ == "__main__":
-    print("--- Тестування парсера (введіть 'exit' для виходу) ---")
     while True:
         try:
             user_input = input("test> ")
