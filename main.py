@@ -1,5 +1,7 @@
 import os
 import platform
+import parser
+import executor
 
 login=os.getlogin()
 
@@ -7,7 +9,7 @@ host_name=platform.node()
 
 catalog=os.getcwd()
 
-total=login+"@"+host_name+":"+catalog+"$"
+total=login+"@"+host_name+":"+catalog+"$ "
 
 while True:
     
@@ -18,4 +20,6 @@ while True:
     if not user_input:
         continue
     
-    print("Команда для виконання:", user_input)
+    parse_result = parser.parse(user_input)
+    executor.execute(parse_result)
+    
