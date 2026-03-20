@@ -5,6 +5,5 @@ import commands.echo.echo
 COMMANDS = {
     "test": commands.test.test,
     "echo": commands.echo.echo,
-   "cd": commands.cd.cd
-  
+    "cd": commands.cd.cd
 }
