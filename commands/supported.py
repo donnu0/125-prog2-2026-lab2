@@ -2,7 +2,7 @@ import commands.test.test
 import commands.cd.cd
 import commands.echo.echo
 import commands.sort.sort
-import cammands.cat.cat
+import commands.cat.cat
 
 COMMANDS = {
     "test": commands.test.test,
