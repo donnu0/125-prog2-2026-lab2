@@ -11,3 +11,4 @@ COMMANDS = {
     "sort": commands.sort.sort,
     "cat": commands.cat.cat
 }
+
