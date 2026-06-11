@@ -7,8 +7,8 @@ USAGE = "usage: id"
 
 
 def run(argv: list[str], ctx) -> int:
-    if not isinstance(argv, (list, tuple)) or len(argv) != 1 or argv[0] != "id":
-        print(USAGE, file=sys.stderr)
+    if len(argv) != 1 or argv[0] != "id":
+        sys.stderr.write(USAGE + "\n")
         return 2
 
     try:
@@ -17,5 +17,5 @@ def run(argv: list[str], ctx) -> int:
         print(f"uid={uid} gid={gid} user={getpass.getuser()}")
         return 0
     except Exception:
-        print("id: internal error", file=sys.stderr)
+        sys.stderr.write("id: internal error\n")
         return 1
