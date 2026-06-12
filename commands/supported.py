@@ -3,6 +3,7 @@ import commands.cd.cd
 import commands.echo.echo
 import commands.sort.sort
 import commands.cat.cat
+import commands.id.id
 import commands.whoami.whoami
 
 COMMANDS = {
@@ -11,6 +12,6 @@ COMMANDS = {
     "echo": commands.echo.echo,
     "sort": commands.sort.sort,
     "cat": commands.cat.cat,
+    "id": commands.id.id,
     "whoami": commands.whoami.whoami
 }
-
